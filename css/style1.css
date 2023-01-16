@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+    font-family: 'Story Brush';
+    src: url('../fonts/DHF\ Story\ Brush\ Slanted.ttf') format('truetype');
+}
+
+.logo {
+    font-family: 'Story Brush';
+    font-size: 80px;
+    margin: 0;
+}
+.btn-movil{
+    width: 30px;
+    margin: 20px;
+}
+#menu-movil{
+    background-color: #ffff;
+    box-shadow: 0px -3px 50px 0px rgba(155, 155, 155, 0.75);
+}
+body {
+    padding-bottom: 40px;
+}
+footer p{
+    padding-top: 30px;
+}
