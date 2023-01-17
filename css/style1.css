@@ -10,13 +10,20 @@
     font-size: 80px;
     margin: 0;
 }
-.btn-movil{
+.btn-movil, .btn-tablet{
     width: 30px;
     margin: 20px;
 }
-#menu-movil{
+
+#menu-movil, #menu-tablet{
     background-color: #ffff;
     box-shadow: 0px -3px 50px 0px rgba(155, 155, 155, 0.75);
+}
+#noticia{
+    padding-bottom: 20px;
+}
+.bd-placeholder-img{
+    object-fit: cover;
 }
 body {
     padding-bottom: 40px;
