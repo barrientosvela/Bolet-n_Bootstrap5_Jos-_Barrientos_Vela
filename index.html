@@ -17,22 +17,112 @@
     <div id="cabecera" class="container text-center">
         <div class="row">
             <div class="col">
-
+                <div id="btn-menu" class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="images/menu.png" alt="mdo" width="60" height="60">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                Home
+                            </button>
+                            <div class="collapse show" id="home-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Overview</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Updates</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Reports</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                Dashboard
+                            </button>
+                            <div class="collapse" id="dashboard-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Overview</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Orders
+                            </button>
+                            <div class="collapse" id="orders-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Processed</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Returned</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                            </button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Profile</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="link-dark d-inline-flex text-decoration-none rounded">Settings</a>
+                                    </li>
+                                    <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign
+                                            out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="col">
-                    <h1 class="logo">BXN</h1>
+                <h1 class="logo">BXN</h1>
             </div>
             <div class="col">
                 <div id="btn-user" class="dropdown text-end">
-                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="images/perfil.png" alt="mdo" width="60" height="60" class="rounded-circle">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="images/perfil.png" alt="mdo" width="60" height="60" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
-                      <li><a class="dropdown-item" href="#">Settings</a></li>
-                      <li><a class="dropdown-item" href="#">Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
                     </ul>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
