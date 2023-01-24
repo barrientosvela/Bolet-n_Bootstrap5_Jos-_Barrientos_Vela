@@ -33,11 +33,19 @@
         display: none;
     }
 }
-
+#slidevar{
+    width: 280px;
+    height: 100%;
+    display: none;
+    background-color: #ffff;
+    z-index: 9999;
+    box-shadow: 0px -3px 50px 0px rgba(155, 155, 155, 0.75);
+}
 #menu-movil,
 #menu-tablet {
     background-color: #ffff;
     box-shadow: 0px -3px 50px 0px rgba(155, 155, 155, 0.75);
+    height: 80px;
 }
 
 #noticia {
@@ -52,7 +60,7 @@ body {
     padding-bottom: 40px;
 }
 
-#btn-user {
+#btn-user, #btn-menu {
     margin: 30px;
 }
 
