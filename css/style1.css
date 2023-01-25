@@ -20,7 +20,7 @@
     display: none;
 }
 
-@media (min-width: 525px) and (max-width: 768px) {
+@media (min-width: 525px) and (max-width: 767px) {
     #menu-movil div {
         display: block;
     }
@@ -39,7 +39,7 @@
     display: none;
     background-color: #ffff;
     z-index: 9999;
-    box-shadow: 0px -3px 50px 0px rgba(155, 155, 155, 0.75);
+    box-shadow: 200px 0px 500px 0px rgba(155, 155, 155, 0.75);
 }
 #menu-movil,
 #menu-tablet {
@@ -59,7 +59,9 @@
 body {
     padding-bottom: 40px;
 }
-
+#btn-buscar{
+    width: 20px;
+}
 #btn-user, #btn-menu {
     margin: 30px;
 }

@@ -16,13 +16,28 @@
     <!-- Cabecera -->
     <div id="cabecera" class="container text-center">
         <div class="row">
-            <div class="col">
+            <div class="col d-none d-md-block d-lg-none">
                 <img id="btn-menu" src="images/menu.png" alt="mdo" width="60" height="60">
             </div>
-            <div class="col">
+            <div class="col d-none d-lg-block">
                 <h1 class="logo">BXN</h1>
             </div>
-            <div class="col">
+            <div class="col d-none d-lg-block align-self-center">
+                <!-- Barra de busqueda -->
+                <form class="barraBusqueda w-100 me-3 d-flex" action="#" method="post">
+                    <select name="tipo" class="form-control w-50">
+                        <option value="Cualquiera">Cualquiera</option>
+                        <option value="Betaboxer">Betaboxer</option>
+                        <option value="Competicion">Competición</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Search" name="busqueda">
+                    <button class="btn border" type="submit" name="buscar"><img id="btn-buscar" src="images/buscar.png" alt=""></button>
+                </form>
+            </div>
+            <div class="col d-block d-lg-none">
+                <h1 class="logo">BXN</h1>
+            </div>
+            <div class="col d-none d-md-block d-lg-none">
                 <div id="btn-user" class="dropdown text-end">
                     <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -35,77 +50,47 @@
                     </ul>
                 </div>
             </div>
+            <div class="col d-none d-lg-block text-end align-self-center">
+                <a type="button" class="btn btn-outline-primary me-2" href="html/registro.html">Login</a>
+                <a type="button" class="btn btn-primary text-white" href="html/registro.html">Sign-up</a>
+            </div>
         </div>
     </div>
     </div>
     <!-- Slidevar -->
     <div id="slidevar" class="position-fixed flex-column p-3">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi pe-none me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Sidebar</span>
-        </a>
+        <div class="text-center font-weight-bold">Menú de navegación</div>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#home"></use>
-                    </svg>
-                    Home
+                <a href="#" class="nav-link text-center" aria-current="page"> Home</a>
+            </li>
+            <li>
+                <a href="html/busqueda.html" class="nav-link text-center">
+
+                    Buscar
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link link-dark">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#speedometer2"></use>
-                    </svg>
-                    Dashboard
-                </a>
-            </li>
-            <li>
-                <a href="#" class="nav-link link-dark">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#table"></use>
-                    </svg>
+                <a href="#" class="nav-link text-center ">
+
                     Orders
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link link-dark">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#grid"></use>
-                    </svg>
+                <a href="#" class="nav-link text-center ">
+
                     Products
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link link-dark">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
+                <a href="#" class="nav-link text-center ">
+
                     Customers
                 </a>
             </li>
         </ul>
         <hr>
-        <div class="dropdown">
-            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                <strong>mdo</strong>
-            </a>
-            <ul class="dropdown-menu text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-        </div>
     </div>
     <!-- Contenido album -->
     <div id="contenido" class="album py-5 bg-light">
@@ -184,7 +169,7 @@
         <a href="#"><img class="btn-tablet" src="images/estrella.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/filtrar.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/inicio.png" alt=""></a>
-        <a href="#"><img class="btn-tablet" src="images/buscar.png" alt=""></a>
+        <a href="html/busqueda.html"><img class="btn-tablet" src="images/buscar.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/descargar.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/usuario.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/configuraciones.png" alt=""></a>
@@ -195,7 +180,7 @@
     <div id="menu-movil" class="d-flex d-md-none d-lg-none align-items-center justify-content-center fixed-bottom">
         <div class="logo">BXN</div>
         <a href="#"><img class="btn-movil" src="images/inicio.png" alt=""></a>
-        <a href="#"><img class="btn-movil" src="images/buscar.png" alt=""></a>
+        <a href="html/busqueda.html"><img class="btn-movil" src="images/buscar.png" alt=""></a>
         <a href="#"><img class="btn-movil" src="images/descargar.png" alt=""></a>
         <a href="#"><img class="btn-movil" src="images/usuario.png" alt=""></a>
     </div>
