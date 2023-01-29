@@ -10,6 +10,9 @@
     font-size: 80px;
     margin: 0;
 }
+#cabecera{
+    height: 20%;
+}
 
 .btn-movil,
 .btn-tablet {

@@ -93,22 +93,23 @@
                             <img src="../images/perfil.png" alt="mdo" width="60" height="60" class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu text-small">
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            <li><a class="dropdown-item" href="user.html">Perfil</a></li>
+                            <li><a class="dropdown-item" href="prox.html">Configuración</a></li>
+                            <li><a class="dropdown-item" href="prox.html">Cerrar sesión</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col d-none d-lg-block text-end align-self-center">
-                    <a type="button" class="btn btn-outline-primary me-2" href="registro.html">Login</a>
-                    <a type="button" class="btn btn-primary text-white" href="registro.html">Sign-up</a>
+                    <a type="button" class="btn btn-outline-primary" href="acceso.html">Accede</a>
+                    <a type="button" class="btn btn-outline-primary" href="registro.html">Registro</a>
                 </div>
             </div>
         </div>
         <!-- Barra de busqueda -->
         <form class="barraBusqueda" action="#" method="post">
             <div class="input-group mt-3 mb-3" id="barraBusqueda">
-                <select name="tipo" class="btn btn-primary dropdown-toggle d-none d-lg-block d-md-block" data-bs-toggle="dropdown">
+                <select name="tipo" class="btn btn-primary dropdown-toggle d-none d-lg-block d-md-block"
+                    data-bs-toggle="dropdown">
                     <option value="Cualquiera">Cualquiera</option>
                     <option value="Betaboxer">Betaboxer</option>
                     <option value="Competicion">Competición</option>
@@ -135,7 +136,7 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link text-center" aria-current="page"> Home</a>
+                <a href="../index.html" class="nav-link text-center" aria-current="page">Inicio</a>
             </li>
             <li>
                 <a href="busqueda.html" class="nav-link text-center">
@@ -143,17 +144,17 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="prox.html" class="nav-link text-center ">
                     Orders
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="prox.html" class="nav-link text-center ">
                     Products
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="prox.html" class="nav-link text-center ">
                     Customers
                 </a>
             </li>
@@ -161,126 +162,132 @@
         <hr>
     </div>
     <!-- Contenido album -->
-    <div class="album py-5 bg-light">
+    <div id="contenido" class="album py-5 bg-light border-bottom">
         <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="col">
+            <div class="row">
+                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4 ">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
-                        </svg>
+                        <img class="bd-placeholder-img card-img-top" src="../images/ejemplo.jpg" width="100%" height="225">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
+                            <h1 class="card-text">Titulo</h1>
+                            <h3 class="card-text">Frase de Subtitulo</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This content is a little bit longer.</p>
+
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em">Thumbnail</text>
-                        </svg>
+                        <img class="bd-placeholder-img card-img-top" src="../images/ejemplo.jpg" width="100%" height="225">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
+                            <h1 class="card-text">Titulo</h1>
+                            <h3 class="card-text">Frase de Subtitulo</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="../images/ejemplo.jpg" width="100%" height="225">
+                        <div class="card-body">
+                            <h1 class="card-text">Titulo</h1>
+                            <h3 class="card-text">Frase de Subtitulo</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This content is a little bit longer.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" src="../images/ejemplo.jpg" width="100%" height="225">
+                        <div class="card-body">
+                            <h1 class="card-text">Titulo</h1>
+                            <h3 class="card-text">Frase de Subtitulo</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural
+                                lead-in to
+                                additional
+                                content. This content is a little bit longer.</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="b-example-divider"></div>
     <!-- Footer -->
-    <div class="container">
-        <footer class="py-5">
-            <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Contacto</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Recursos</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
-                        <h5>Subscribete a nuestra newsletter</h5>
-                        <p>Mantente informado con nuestro contenido exclusivo. ¡No te quedes atrás y únete a nuestra
-                            comunidad de seguidores!</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
+    <div class="container border-top">
+        <footer class="d-flex justify-content-sm-center py-5 my-4 row">
+            <div id="newsletter" class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribete a nuestra newsletter</h5>
+                    <p>Mantente informado con nuestro contenido exclusivo. ¡No te quedes atrás y únete a nuestra
+                        comunidad de seguidores!</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="col-12">
+                <p class="text-muted text-center">© 2023
+                    Diseño de Interfaces Web, José Barrientos Vela DAW 2º</p>
+                <img src="images/Logo2.0.png" class="d-none d-lg-block relative-bottom float-right" alt=""
+                    width="150px">
+            </div>
+            <div class="col d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>© 2022 BeatboxNews, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/linkedin.png" alt=""
-                                width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/instagram.png" alt=""
-                                width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/facebook.png" alt=""
-                                width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/youtube.png" alt=""
-                                width="25px"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/linkedin.png"
+                                alt="" width="20px"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/instagram.png"
+                                alt="" width="20px"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/facebook.png"
+                                alt="" width="20px"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/youtube.png"
+                                alt="" width="25px"></a></li>
                     <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/email.png" alt=""
                                 width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/whatsapp.png" alt=""
-                                width="20px"></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/whatsapp.png"
+                                alt="" width="20px"></a></li>
                 </ul>
             </div>
         </footer>
+    </div>
+    <!-- Menu tablet -->
+    <div id="menu-tablet" class="d-flex d-lg-none align-items-center justify-content-center fixed-bottom">
+        <a href="#"><img class="btn-tablet" src="../images/estrella.png" alt=""></a>
+        <a href="#"><img class="btn-tablet" src="../images/filtrar.png" alt=""></a>
+        <a href="../index.html"><img class="btn-tablet" src="../images/inicio.png" alt=""></a>
+        <a href="busqueda.html"><img class="btn-tablet" src="../images/buscar.png" alt=""></a>
+        <a href="#"><img class="btn-tablet" src="../images/descargar.png" alt=""></a>
+        <a href="user.html"><img class="btn-tablet" src="../images/usuario.png" alt=""></a>
+        <a href="#"><img class="btn-tablet" src="../images/configuraciones.png" alt=""></a>
+        <a href="#"><img class="btn-tablet" src="../images/pegar.png" alt=""></a>
+        <a href="#"><img class="btn-tablet" src="../images/borrar.png" alt=""></a>
+    </div>
+    <!-- Menú movil -->
+    <div id="menu-movil" class="d-flex d-md-none d-lg-none align-items-center justify-content-center fixed-bottom">
+        <div class="logo">BXN</div>
+        <a href="../index.html"><img class="btn-movil" src="../images/inicio.png" alt=""></a>
+        <a href="#"><img class="btn-movil" src="../images/flecha-arriba.png" alt=""></a>
+        <a href="busqueda.html"><img class="btn-movil" src="../images/buscar.png" alt=""></a>
+        <a href="user.html"><img class="btn-movil" src="../images/usuario.png" alt=""></a>
     </div>
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
 

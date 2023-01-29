@@ -14,7 +14,7 @@
 
 <body>
     <!-- Cabecera -->
-    <div id="cabecera" class="container text-center border-bottom" style="background-image: url('../video/waves.svg');">
+    <div id="cabecera" class="container text-center border-bottom">
         <div class="row">
             <div class="col d-none d-md-block d-lg-none">
                 <img id="btn-menu" src="images/menu.png" alt="mdo" width="60" height="60">
@@ -45,15 +45,15 @@
                         <img src="images/perfil.png" alt="mdo" width="60" height="60" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="html/user.html">Perfil</a></li>
+                        <li><a class="dropdown-item" href="html/prox.html">Configuración</a></li>
+                        <li><a class="dropdown-item" href="html/prox.html">Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col d-none d-lg-block text-end align-self-center">
-                <a type="button" class="btn btn-outline-primary me-2" href="html/registro.html">Login</a>
-                <a type="button" class="btn btn-primary text-white" href="html/registro.html">Sign-up</a>
+                <a type="button" class="btn btn-outline-primary me-2" href="html/acceso.html">Accede</a>
+                <a type="button" class="btn btn-outline-primary me-2" href="html/registro.html">Registro</a>
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#" class="nav-link text-center" aria-current="page"> Home</a>
+                <a href="#" class="nav-link text-center" aria-current="page">Inicio</a>
             </li>
             <li>
                 <a href="html/busqueda.html" class="nav-link text-center">
@@ -81,87 +81,35 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="html/prox.html" class="nav-link text-center ">
                     Orders
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="html/prox.html" class="nav-link text-center ">
                     Products
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-center ">
+                <a href="html/prox.html" class="nav-link text-center ">
                     Customers
                 </a>
             </li>
         </ul>
         <hr>
     </div>
-    <!-- Contenido album -->
-    <div id="contenido" class="album py-5 bg-light border-bottom">
-        <div class="container">
-            <div class="row">
-                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4 ">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="images/ejemplo.jpg" width="100%" height="225">
-                        <div class="card-body">
-                            <h1 class="card-text">Titulo</h1>
-                            <h3 class="card-text">Frase de Subtitulo</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="images/ejemplo.jpg" width="100%" height="225">
-                        <div class="card-body">
-                            <h1 class="card-text">Titulo</h1>
-                            <h3 class="card-text">Frase de Subtitulo</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="images/ejemplo.jpg" width="100%" height="225">
-                        <div class="card-body">
-                            <h1 class="card-text">Titulo</h1>
-                            <h3 class="card-text">Frase de Subtitulo</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div id="noticia" class="col-sm-1 col-md-6 col-lg-4">
-                    <div class="card shadow-sm">
-                        <img class="bd-placeholder-img card-img-top" src="images/ejemplo.jpg" width="100%" height="225">
-                        <div class="card-body">
-                            <h1 class="card-text">Titulo</h1>
-                            <h3 class="card-text">Frase de Subtitulo</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-
-                        </div>
-                    </div>
-                </div>
+    <!-- Contenido -->
+    <div class="container p-2">
+        <div class="card mb-3">
+            <img src="images/ejemplo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
     </div>
-
     <!-- Footer -->
     <div class="container">
         <footer class="d-flex justify-content-sm-center py-5 my-4 row">
@@ -179,7 +127,8 @@
             <div class="col-12">
                 <p class="text-muted text-center">© 2023
                     Diseño de Interfaces Web, José Barrientos Vela DAW 2º</p>
-                <img src="images/Logo2.0.png" class="d-none d-lg-block relative-bottom float-right" alt="" width="150px">
+                <img src="images/Logo2.0.png" class="d-none d-lg-block relative-bottom float-right" alt=""
+                    width="150px">
             </div>
             <div class="col d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>© 2022 BeatboxNews, Inc. All rights reserved.</p>
@@ -207,7 +156,7 @@
         <a href="#"><img class="btn-tablet" src="images/inicio.png" alt=""></a>
         <a href="html/busqueda.html"><img class="btn-tablet" src="images/buscar.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/descargar.png" alt=""></a>
-        <a href="#"><img class="btn-tablet" src="images/usuario.png" alt=""></a>
+        <a href="html/user.html"><img class="btn-tablet" src="images/usuario.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/configuraciones.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/pegar.png" alt=""></a>
         <a href="#"><img class="btn-tablet" src="images/borrar.png" alt=""></a>
@@ -217,8 +166,7 @@
         <div class="logo">BXN</div>
         <a href="#"><img class="btn-movil" src="images/inicio.png" alt=""></a>
         <a href="html/busqueda.html"><img class="btn-movil" src="images/buscar.png" alt=""></a>
-        <a href="#"><img class="btn-movil" src="images/descargar.png" alt=""></a>
-        <a href="#"><img class="btn-movil" src="images/usuario.png" alt=""></a>
+        <a href="html/user.html"><img class="btn-movil" src="images/usuario.png" alt=""></a>
     </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
