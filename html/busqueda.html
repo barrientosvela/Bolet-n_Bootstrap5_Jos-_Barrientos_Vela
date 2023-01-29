@@ -7,6 +7,7 @@
     <meta name="author" content="José Barriemtos Vela">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/busqueda.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <title>Busqueda</title>
 
@@ -70,8 +71,8 @@
 
 <body>
     <!-- Cabecera -->
-    <div class="cabecera container-fluid text-center border-bottom pb-5" id="cabecera"
-        style="background-image: url('../video/waves.svg');width: 100%;height: 300px; background-repeat: repeat-x;">
+    <div class="cabecera container-fluid text-center border-bottom" id="cabecera"
+        style="background-image: url('../video/waves.svg');width: 100%;height: 20%; background-repeat: repeat-x;">
         <div>
             <div class="row">
                 <div class="col d-none d-md-block d-lg-none">
@@ -80,7 +81,7 @@
                 <div class="col d-none d-lg-block">
                     <h1 class="logo">BXN</h1>
                 </div>
-                <div class="col d-none d-lg-block align-self-center">
+                <div class="col d-none d-lg-block">
                 </div>
                 <div class="col d-block d-lg-none">
                     <h1 class="logo">BXN</h1>
@@ -106,9 +107,8 @@
         </div>
         <!-- Barra de busqueda -->
         <form class="barraBusqueda" action="#" method="post">
-            <div class="input-group mt-3 mb-3" id="barraBusqueda"
-                style="padding-left: 200px;padding-right: 200px;padding-top: 140px;">
-                <select name="tipo" class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown">
+            <div class="input-group mt-3 mb-3" id="barraBusqueda">
+                <select name="tipo" class="btn btn-primary dropdown-toggle d-none d-lg-block d-md-block" data-bs-toggle="dropdown">
                     <option value="Cualquiera">Cualquiera</option>
                     <option value="Betaboxer">Betaboxer</option>
                     <option value="Competicion">Competición</option>
@@ -118,17 +118,17 @@
             </div>
         </form>
     </div>
-        <div class="container d-none d-lg-block">
-            <header class="d-flex flex-wrap justify-content-center border-bottom">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Inicio</a>
-                    </li>
-                    <li class="nav-item"><a href="busqueda.html" class="nav-link">Buscar</a></li>
-                    <li class="nav-item"><a href="prox.html" class="nav-link">Contacto</a></li>
-                    <li class="nav-item"><a href="prox.html" class="nav-link">Sobre nosotros</a></li>
-                </ul>
-            </header>
-        </div>
+    <div class="container d-none d-lg-block">
+        <header class="d-flex flex-wrap justify-content-center border-bottom">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item"><a href="busqueda.html" class="nav-link">Buscar</a></li>
+                <li class="nav-item"><a href="prox.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="prox.html" class="nav-link">Sobre nosotros</a></li>
+            </ul>
+        </header>
+    </div>
     <!-- Slidevar -->
     <div id="slidevar" class="position-fixed flex-column p-3">
         <div class="text-center font-weight-bold">Menú de navegación</div>
@@ -251,7 +251,6 @@
                         <p>Mantente informado con nuestro contenido exclusivo. ¡No te quedes atrás y únete a nuestra
                             comunidad de seguidores!</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                             <button class="btn btn-primary" type="button">Subscribe</button>
                         </div>
@@ -262,17 +261,17 @@
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>© 2022 BeatboxNews, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/linkedin.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/linkedin.png" alt=""
                                 width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/instagram.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/instagram.png" alt=""
                                 width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/facebook.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/facebook.png" alt=""
                                 width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/youtube.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/youtube.png" alt=""
                                 width="25px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/email.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/email.png" alt=""
                                 width="20px"></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><img src="../images/rrss/whatsapp.png" alt=""
+                    <li class="ms-3"><a class="link-dark" href="#"><img id="icon" src="../images/rrss/whatsapp.png" alt=""
                                 width="20px"></a></li>
                 </ul>
             </div>

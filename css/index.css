@@ -20,6 +20,7 @@
     display: none;
 }
 
+
 @media (min-width: 525px) and (max-width: 767px) {
     #menu-movil div {
         display: block;
@@ -68,4 +69,11 @@ body {
 
 footer p {
     padding-top: 30px;
+}
+#icon {
+    width: 45px;
+    padding: 10px;
+}
+#newsletter{
+    margin-left: 0;
 }
